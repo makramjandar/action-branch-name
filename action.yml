@@ -3,11 +3,15 @@ description: 'Run action to get the current branch name within Github Actions.'
 author: 'Makram Jandar'
 # based on https://stackoverflow.com/questions/58033366/how-to-get-the-current-branch-within-github-actions
 
+outputs:
+  branch-name:
+    description: "Branch name"
+    value: ${{ steps.branch-name-extractor.outputs.branch-name }}
+
 runs:
   using: "composite"
+        
   steps:
-    
-    - name: Extract branch name
+    - id: branch-name-extractor
+      run: echo "branch-name=${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}" >> $GITHUB_OUTPUT
       shell: bash
-      run: echo "branch=${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}" >> $GITHUB_OUTPUT
-      id: extract_branch
