@@ -6,31 +6,42 @@
 [![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/makramjandar/action-github-branch-name?logo=github&sort=semver)](https://github.com/makramjandar/action-github-branch-name/releases)
 [![action-bumpr supported](https://img.shields.io/badge/bumpr-supported-ff69b4?logo=github&link=https://github.com/haya14busa/action-bumpr)](https://github.com/haya14busa/action-bumpr)
 
-This repo contains a action to run ...:
-- [...](...)
+This repo contains a action to get repo's branch name:
+based on [How to get the current branch within Github Actions?https://stackoverflow.com/questions/58033366/how-to-get-the-current-branch-within-github-actions]:()
 - [...](...)
 
-## Input
+## Output
 
 ```yaml
-inputs:
-  black:
-    description: |
+outputs:
+  branch-name:
+    description: "Branch name"
+    value: ${{ steps.branch-name-extractor.outputs.branch-name }}
 ```
 
 ## Usage
 
 ```yaml
-name: Pull Request
+name: GitHub Composite Action to extract the Branch Name
 on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
   workflow_dispatch:
 
 jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        shell: bash
+    
+    steps:
+      - uses: actions/checkout@v3
+      - id: get-branch-name
+        uses: makramjandar/action-github-branch-name@v1
+      - run: echo ${{ steps.get-branch-name.outputs.branch-name }}
 ```
+
+
 
 ## Development
 
