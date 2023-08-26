@@ -9,6 +9,5 @@ runs:
     
     - name: Extract branch name
       shell: bash
-      fail-on-error: true
       run: echo "branch=${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}" >> $GITHUB_OUTPUT
       id: extract_branch
