@@ -1,10 +1,9 @@
 # action-github-branch-name
-[![Test](https://github.com/microsoft/action-python/workflows/Test/badge.svg)](https://github.com/microsoft/action-python/actions?query=workflow%3ATest)
-[![reviewdog](https://github.com/microsoft/action-python/workflows/reviewdog/badge.svg)](https://github.com/microsoft/action-python/actions?query=workflow%3Areviewdog)
-[![depup](https://github.com/microsoft/action-python/workflows/depup/badge.svg)](https://github.com/microsoft/action-python/actions?query=workflow%3Adepup)
-[![release](https://github.com/microsoft/action-python/workflows/release/badge.svg)](https://github.com/microsoft/action-python/actions?query=workflow%3Arelease)
-[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/microsoft/action-python?logo=github&sort=semver)](https://github.com/microsoft/action-python/releases)
-[![action-bumpr supported](https://img.shields.io/badge/bumpr-supported-ff69b4?logo=github&link=https://github.com/haya14busa/action-bumpr)](https://github.com/haya14busa/action-bumpr)
+[![Test](https://github.com/makramjandar/action-github-branch-name/workflows/Test/badge.svg)](https://github.com/microsoft/action-python/actions?query=workflow%3ATest)
+[![reviewdog](https://github.com/makramjandar/action-github-branch-name/workflows/reviewdog/badge.svg)](https://github.com/microsoft/action-python/actions?query=workflow%3Areviewdog)
+[![depup](https://github.com/makramjandar/action-github-branch-name/workflows/depup/badge.svg)](https://github.com/microsoft/action-python/actions?query=workflow%3Adepup)
+[![release](https://github.com/makramjandar/action-github-branch-name/workflows/release/badge.svg)](https://github.com/microsoft/action-python/actions?query=workflow%3Arelease)
+[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/makramjandar/action-github-branch-name?logo=github&sort=semver)](https://github.com/microsoft/action-python/releases)
 
 This repo contains a action to run ...:
 - [...](...)
