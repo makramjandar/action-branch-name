@@ -6,9 +6,8 @@
 [![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/makramjandar/action-github-branch-name?logo=github&sort=semver)](https://github.com/makramjandar/action-github-branch-name/releases)
 [![action-bumpr supported](https://img.shields.io/badge/bumpr-supported-ff69b4?logo=github&link=https://github.com/haya14busa/action-bumpr)](https://github.com/haya14busa/action-bumpr)
 
-This repo contains a action to get repo's branch name:
+This repo contains a action to get repo's branch name:  
 based on [How to get the current branch within Github Actions?https://stackoverflow.com/questions/58033366/how-to-get-the-current-branch-within-github-actions]:()
-- [...](...)
 
 ## Output
 
