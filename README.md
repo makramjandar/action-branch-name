@@ -1,4 +1,4 @@
-# action-name
+# action-github-branch-name
 [![Test](https://github.com/microsoft/action-python/workflows/Test/badge.svg)](https://github.com/microsoft/action-python/actions?query=workflow%3ATest)
 [![reviewdog](https://github.com/microsoft/action-python/workflows/reviewdog/badge.svg)](https://github.com/microsoft/action-python/actions?query=workflow%3Areviewdog)
 [![depup](https://github.com/microsoft/action-python/workflows/depup/badge.svg)](https://github.com/microsoft/action-python/actions?query=workflow%3Adepup)
