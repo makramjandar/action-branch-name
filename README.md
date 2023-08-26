@@ -1,9 +1,9 @@
-# action-github-branch-name
-[![Test](https://github.com/makramjandar/action-github-branch-name/workflows/Test/badge.svg)](https://github.com/makramjandar/action-github-branch-name/actions?query=workflow%3ATest)
-[![reviewdog](https://github.com/makramjandar/action-github-branch-name/workflows/reviewdog/badge.svg)](https://github.com/makramjandar/action-github-branch-name/actions?query=workflow%3Areviewdog)
-[![depup](https://github.com/makramjandar/action-github-branch-name/workflows/depup/badge.svg)](https://github.com/makramjandar/action-github-branch-name/actions?query=workflow%3Adepup)
-[![release](https://github.com/makramjandar/action-github-branch-name/workflows/release/badge.svg)](https://github.com/makramjandar/action-github-branch-name/actions?query=workflow%3Arelease)
-[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/makramjandar/action-github-branch-name?logo=github&sort=semver)](https://github.com/makramjandar/action-github-branch-name/releases)
+# action-branch-name
+[![Test](https://github.com/makramjandar/action-branch-name/workflows/Test/badge.svg)](https://github.com/makramjandar/action-branch-name/actions?query=workflow%3ATest)
+[![reviewdog](https://github.com/makramjandar/action-branch-name/workflows/reviewdog/badge.svg)](https://github.com/makramjandar/action-branch-name/actions?query=workflow%3Areviewdog)
+[![depup](https://github.com/makramjandar/action-branch-name/workflows/depup/badge.svg)](https://github.com/makramjandar/action-branch-name/actions?query=workflow%3Adepup)
+[![release](https://github.com/makramjandar/action-branch-name/workflows/release/badge.svg)](https://github.com/makramjandar/action-branch-name/actions?query=workflow%3Arelease)
+[![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/makramjandar/action-branch-name?logo=github&sort=semver)](https://github.com/makramjandar/action-branch-name/releases)
 [![action-bumpr supported](https://img.shields.io/badge/bumpr-supported-ff69b4?logo=github&link=https://github.com/haya14busa/action-bumpr)](https://github.com/haya14busa/action-bumpr)
 
 This repo contains a action to get repo's branch name:  
@@ -36,7 +36,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - id: get-branch-name
-        uses: makramjandar/action-github-branch-name@v1
+        uses: makramjandar/action-branch-name@v1
       - run: echo ${{ steps.get-branch-name.outputs.branch-name }}
 ```
 
